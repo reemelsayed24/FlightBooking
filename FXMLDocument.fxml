@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="425.0" prefWidth="523.0" stylesheets="@backgroundStyle.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flightproj1.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <HBox alignment="CENTER" layoutY="50.0" prefHeight="174.0" prefWidth="523.0">
+         <children>
+            <TableView fx:id="flightTable" prefHeight="174.0" prefWidth="490.0">
+              <columns>
+                <TableColumn fx:id="colFlight_ID" prefWidth="75.0" text="Flight_ID" />
+                <TableColumn fx:id="colD_Airport" prefWidth="75.0" text="D_Airport" />
+                  <TableColumn fx:id="colA_Airport" prefWidth="75.0" text="A_Airport" />
+                  <TableColumn fx:id="colD_Date" prefWidth="75.0" text="D_Date" />
+                  <TableColumn fx:id="colA_Date" prefWidth="65.5" text="A_Date" />
+                  <TableColumn fx:id="colD_Time" minWidth="0.0" prefWidth="56.5" text="D_Time" />
+                  <TableColumn fx:id="colA_Time" prefWidth="66.0" text="A_Time" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <VBox layoutX="107.0" layoutY="237.0" prefHeight="139.0" prefWidth="177.0">
+         <children>
+            <TextField fx:id="flightIDText" />
+            <TextField fx:id="D_AirportText" />
+            <TextField fx:id="A_AirportText" />
+            <DatePicker fx:id="D_DateText" />
+            <DatePicker fx:id="A_DateText" />
+            <TextField fx:id="D_TimeText" />
+            <TextField fx:id="A_TimeText" />
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="235.0" prefHeight="139.0" prefWidth="104.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="101.0" text="Flight_ID">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="D_Airport">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="35.0" text="A_Airport">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="60.0" text="D_Date">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="85.0" text="A_Date">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="D_Time">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label text="A_Time">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="22.0" layoutY="14.0" text="Flight Scedule">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="393.0" layoutY="265.0" mnemonicParsing="false" onAction="#addFlightButton" prefHeight="30.0" prefWidth="120.0" text="Add Flight">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="393.0" layoutY="306.0" mnemonicParsing="false" onAction="#deleteFlightButton" prefHeight="30.0" prefWidth="120.0" text="Remove Flight">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="394.0" layoutY="347.0" mnemonicParsing="false" onAction="#bookTicketView" prefHeight="31.0" prefWidth="117.0" text="Book Ticket" />
+    </children>
+</AnchorPane>

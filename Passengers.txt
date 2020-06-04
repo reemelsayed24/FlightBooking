@@ -1,9 +1,4 @@
 16100251	Reem Elsayed 	01111646214	Female	reem.elsayed.ri@gmail.com	
 16102570	Reem Tarek	01550557414	Female	reem@rmail.com	
-16101054	Khalid Magdy	011111555	Male	khalid@email.com	
-16100337	Aly Barakat	012253647	Male	aly@email.com	
-16110251	Reem Ismail	011117865	Female	reem@email.com	
-16101054	Khalid Magdy	012345678	Male	khalid@email.com	
-16100773	Aly Nabil	1234567890	Male	reemreem@email	
-
+16110251	Reem Ismail	011117865	Female	reem@email.com		
 1233444	reemreem	0111122223	Female	reeeeeeeeeeeeem	
